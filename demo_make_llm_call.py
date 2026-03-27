@@ -16,8 +16,7 @@ explanation outside the code block."""
 
 
 response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=generate_prompt()
+    model="gemini-2.5-flash", contents=generate_prompt()
 )
 
 match = re.search(r"```(?:python)?\s*([\w\W]*?)```", response.text, re.DOTALL)
