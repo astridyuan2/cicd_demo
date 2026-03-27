@@ -42,7 +42,7 @@ jobs:
       run: |
         echo "--- Starting LLM Generation Script Run ---"
         # 1. Execute the script (Functional CI Test)
-        python 01-llm_call.py
+        python demo_make_llm_call.py
         
         # 2. Validation Check: Ensure the output file was created (Test Success)
         if [ ! -s loan_payment.py ]; then
